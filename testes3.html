@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    console.log ("testando - OLÁ");
+
+    //funções: blocos de códigos; posso chamar apenas quando quero que sejam executados; qdo rodo códigos, imprime tudo; se quero que a conta seja algo isolado, que eu precise//
+    //chamar para utilizar, uso função; "fábrica" que recebe elementos e imprime//
+
+    const a = 22
+    const b = 8
+
+    function soma (numero1, numero2) {
+        const total = numero1 + numero2
+        return total
+    }
+
+    console.log (`A soma é ${soma (a,b)}`) // ou "console.log ("O resultado é" + soma (a,b) )"
+
+    // POSSO CHAMAR A FUNÇÃO A QUALQUER MOMENTO DO CÓDIGO, INCLUSIVE CADASTRANDO NOVOS NÚMEROS... Lógico, chamo a qualquer momento depois da função já existir, não antes. EX://
+
+    console.log (soma(100, 25));
+
+    console.log ("NOVA FUNCTION");
+
+    function rico (dinheiro) {
+        if (dinheiro > 100) {
+            return "Rico"
+        } else {
+            return "Pobre"
+        }
+    };
+
+    console.log (rico(10));
+    console.log (rico(100));
+    console.log (rico(200));
+
+    // Na função, posso retornar o que quiser (números, strings, etc) e como quiser. Ex://
+
+    function ricoDemais (dinheiro) {
+        if (dinheiro > 1000000) {
+            return "true"
+        } else {
+            return "false"
+        }
+    };
+
+    console.log (ricoDemais(2000000));
+
+//funções VOID - funções q não retornam nada. São usadas p chamar outras funções ou executar algo bem pontual//
+//obs: qdo passo mouse em cima da funçao aparece VOID; qdo imprime aparece undefined, pq não passei nada nela, só mandei imprimir algo//
+//exemplo quando clico site g1 e surge um MENU: função VOID. Não "retorna" nada, apenas surge o menu ao lado da tela - ele realiza uma ação, não mexe/trabalha com dados q eu inseri//
+//return, portanto, é diferente de uma impressão em tela//
+
+function imprimealgumacoisa () {
+    console.log("Olá")
+}
+console.log(imprimealgumacoisa())
+
+
+
+
+</script>
+
+</html>

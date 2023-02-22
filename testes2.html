@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+console.log("Olá!");
+
+var numero1 = 10;
+var numero2 = 20;
+
+console.log(numero1 > numero2);
+console.log(numero1 == numero2); // quando boto sinal de igual "=" ele imprime "20", pois n1 se torna/atribui n2//
+console.log(numero1 < numero2);
+
+//uso RELACIONAIS em senhas, contas, etc//
+console.log("exemplo relacionais em senhas, contas, etc")
+
+var caixinha = 10;
+var conta = 5;
+console.log (caixinha > conta);
+
+var senha = "dragon";
+var senhaServidor = "dragonball";
+console.log (senha == senhaServidor);
+console.log (senha != senhaServidor);
+
+console.log ("estando o is valid")
+var isValid = true;
+console.log(isValid);
+console.log(!isValid); // lembrando que sinal de exclamação imprime o "contrário", oposição//
+
+var caixinha2 = 15
+var conta2 = "15"
+console.log (caixinha2 == conta2)
+console.log (caixinha2 === conta2)
+
+// Como dizer que a variável é de tipo string, sem nem ter atribuido um valor a ela? VIA FUNÇÃO://
+console.log ("testando FUNÇÃO que atribui tipos")
+var conta3 = String(25);
+
+// Estruturas CONDICIONAIS //
+console.log("testando Estruturas Condicionais")
+
+var idade = 16;
+if (idade === 18) {
+    console.log ("Acabou de ser maior de idade");
+    } else if (idade > 18) {
+        console.log ("É maior de idade");
+    } else {
+        console.log ("É menor de idade");
+    }
+
+// show do Rebeldes kkk para maior de 18 e menor de 30. Exemplo: //
+console.log("teste entradas Show do Rebeldes")
+
+const João = 40;
+const Alex = 16;
+
+if (João > 18 && João < 30) {
+    console.log ("Pode ir no show");
+} else {
+    console.log ("Não deve ir no show");
+}
+
+// posso juntar OU e E; posso aninhar; etc. usar "e" &&, "ou" ||   //
+
+const Maria = 40;
+const Aurora = 16;
+const show = "iniciando";
+const show2 = "iniciado";
+
+if (Maria > 18 && show == "iniciando") {
+    console.log ("Pode entrar no show");
+} else {
+    console.log ("Não deve ir no show");
+}
+
+console.log ("teste ANINHANDO")
+var Luiza = 25
+var Helena = 16
+var show3 = "iniciando"
+var show4 = "iniciado"
+
+if (Luiza < 18) {
+    if (show3 == "iniciando" || show4 == "iniciado") {
+        console.log ("Pode ir no show");
+    } 
+}
+else {
+
+    console.log ("Não pode NÃO")
+};
+
+
+
+console.log ("próximos TESTES")
+
+var ingressoMeia = 20;
+var ingressoInteira = 40;
+var pessoa = "estudante"
+
+if (pessoa == "estudante") {
+    console.log (`O ingresso é ${ingressoMeia}`);
+} else {
+    console.log (`O ingresso é ${ingressoInteira}`);
+};
+
+console.log ("SWITCH")
+
+var fruta = "banana";
+switch (fruta) {
+    case "uva": console.log ("Uva: 10 reais");
+    break;
+    case "laranja": console.log ("Laranja: 5 reais");
+    break;
+    case "banana": console.log ("Banana: 4 reais");
+};
+
+//cláusula opcional default - quando não encontra nenhuma que corresponda//
+
+var fruta = "banana";
+switch (fruta) {
+    case "uva": console.log ("Uva: 10 reais");
+    break;
+    case "laranja": console.log ("Laranja: 5 reais");
+    break;
+    case "tâmara": console.log ("Tâmara: 4 reais");
+    default: console.log ("Não achei NADA") 
+};
+
+// quando SWITCH é multi-caso//
+
+var formaPagamento = "aVista"
+switch (formaPagamento) {
+    case "aVista":
+    case "Boleto":
+    case "Cartao":
+        console.log ("Desconto de 5%");
+    break;
+    default:
+        console.log ("Sem desconto");
+}
+
+// OPERADOR TERNÁRIO: maneira de escrever IF ELSE resumidamente; recomenda-se qdo ações forem pequenas, uma operação só//
+
+const a = 20;
+const b = 20;
+
+/* if (a == b) {
+    console.log ("é igual")
+};  */
+
+a == b ? console.log ("é igual") : console.log ("é diferente") //resumida; coloco como 1ª resposta o q quero que apareça se for true, na segunda o q aparecerá se for false//
+
+!a == b ? console.log ("é igual") : console.log ("é diferente") //resumida; coloco como 1ª resposta o q quero que apareça se for true, na segunda o q aparecerá se for false//
+
+a + b == 40 ? console.log ("é igual") : console.log ("é diferente") //resumida; coloco como 1ª resposta o q quero que apareça se for true, na segunda o q aparecerá se for false//
+
+
+
+
+
+</script>
+</html>
