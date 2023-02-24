@@ -14,7 +14,7 @@
 
     var students = [
         {
-            name1: "Alice",
+            name: "Alice",
             height: 160,
             age: 29,
             sex: "feminino",
@@ -55,12 +55,20 @@
         },
     ];
 
-    function resultado (mediaFinal) {
-        if (students[0].mathematics >= 7) {
-            return `${name1} passou`
+    function resultado (estudante, mediaFinal) {
+        if (mediaFinal >= 7) {
+            return `${estudante} está aprovado(a)`
+        } else {
+            return `${estudante} está reprovado(a)`
         }
     }
-        //pensar//
+
+    console.log ( resultado (students[0].name, students[0].mathematics))
+    console.log ( resultado (students[1].name, students[1].mathematics))
+    console.log ( resultado (students[2].name, students[2].mathematics))
+    console.log ( resultado (students[3].name, students[3].mathematics))
+    console.log ( resultado (students[4].name, students[4].mathematics))
+
+
     </script>
-</script>
-</html>
+</html> 
